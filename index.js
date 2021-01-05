@@ -7,7 +7,7 @@ process.on('SIGINT', () => {
 });
 
 process.on('SIGTERM', () => {
-    console.log('Caught interrupt signal2');
+    console.log('Caught interrupt signal');
     process.exit();
 });
 
@@ -19,7 +19,7 @@ const init = async () => {
     console.log("Connected to MongoDB");
 
     app.get('/', (req, res) => {
-        res.json({ message: 'Yo, I\'m Tom, the API' });
+        res.json({ message: 'Yo, I\'m Jack, the API' });
     });
 
     app.listen(3000, () => {
