@@ -1,0 +1,7 @@
+services:
+  my-app:
+    build: .
+    ports: 
+      - 4000:3000
+  mongodb:
+    image: mongo:latest
